@@ -1,0 +1,182 @@
+body{
+  margin-top: 5%;
+}
+
+p{
+  font-family:  cursive;
+  color: #595959;
+  line-height: 25px;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2 > a{
+  font-weight: normal;
+  color: #bc1818;
+  transition: all 0.3s ease;
+}
+
+h2 > a:hover{
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+.col{
+  width: 270px;
+  margin: 1%;
+  display: inline-block;
+}
+
+.col > h3 > a{
+  font-size: 26px;
+  color: black;
+  font-weight: normal;
+}
+
+.col > p > a{
+  font-family: cursive;
+  color: #bc1818;
+  transition: all 0.3s ease;
+}
+
+.col > p > a:hover{
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+.post{
+  width: 100%;
+  border-bottom: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+  display: block;
+  margin-bottom: 2%;
+}
+
+.details{
+  display: inline-block;
+  width: 21%;
+  padding: 1%;
+  margin: auto;
+}
+
+.details > p > a{
+  color: #595959;
+  font-family: cursive;
+  border-bottom: 1px dotted #595959;
+  transition: all 0.3s ease;
+}
+
+.details > p > a:hover{
+  color: #bc1818;
+  border-bottom: 1px dotted #bc1818;
+  transition: all 0.3s ease;
+}
+
+.body{
+  padding: 1%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-block;
+  border-left: 1px solid #d3d3d3;
+  width: 70%;
+}
+
+#content{
+  display: block;
+  width: 900px;
+  margin: auto;
+  font-family: serif;
+}
+
+#content > h1{
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-family: cursive;
+  color: #595959;
+}
+
+#menu{
+  text-align: right;
+  margin-top: 0;
+}
+
+#menu > li{
+  margin-right: 5px;
+  display: inline;
+}
+
+#menu > li > a{
+  font-size: 21px;
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+#menu > li > a:hover{
+  color: #bc1818;
+  transition: all 0.3s ease;
+}
+
+#footer{
+  border-top: 1px solid #d3d3d3;
+  padding: 1%;
+}
+
+#footer > p > a{
+  font-family: cursive;
+  color: #bc1818;
+  transition: all 0.3s ease;
+}
+
+#footer > p > a:hover{
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 900px) {
+  p{
+    line-height: normal;
+  }
+  h1{
+    font-size: 3vw;
+  }
+  .body{
+    font-size: 1.8vw;
+  }
+  .details{
+    font-size: 1.8vw;
+  }
+  #content{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  #menu > li > a{
+    font-size: 1.8vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .col{
+    width: 270px;
+    margin: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .col{
+    width: 95%;
+    font-size: 5vw;
+    margin: auto;
+    display: block;
+  }
+  .col > h3 > a{
+    font-size: 7vw
+  }
+  #footer{
+    font-size: 5vw;
+  }
+}
